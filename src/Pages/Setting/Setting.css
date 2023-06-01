@@ -1,0 +1,71 @@
+.setting{
+    display: flex;
+}
+.wrapper{
+    flex: 9;
+     padding : 20px;
+}
+.settingLable{
+    display: flex;
+    justify-content: space-between;
+}
+.setUpdate{
+    font-size: 30px;
+    color: lightcoral;
+    cursor: pointer;
+}
+.setDelete{
+    font-size: 16px;
+    color: red;
+    cursor: pointer;
+}
+.setForm{
+    display: flex;
+    flex-direction: column;
+
+}
+.setProPic{
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+}
+.setProPic > img{
+width: 100px;
+height: 100px;
+border-radius: 15px;
+object-fit: cover;
+}
+.pIcon{
+    background-color: lightcoral;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.setForm >label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.setForm >input{
+    color: gray;
+    margin: 10px 0px ;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+.setSubmit{
+    width: 150px;
+    align-self: center;
+    border: none;
+    color: white;
+    background-color: teal;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+}
