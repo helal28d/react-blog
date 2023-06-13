@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import "./Write.css";
 import { Context } from "../../context/Context";
 import axios from "axios";
+import { baseURL } from "../../server";
 export default function Write() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
@@ -21,7 +22,7 @@ export default function Write() {
 
       try {
         await axios
-          .post("/upload", formData)
+          .post(baseURL + "/upload", formData)
           .then((response) => {
             console.log(response);
             newPost.photo = response.data;
@@ -34,7 +35,7 @@ export default function Write() {
       }
     }
     try {
-      const res = await axios.post("/posts", newPost);
+      const res = await axios.post(baseURL + "/posts", newPost);
       console.log("post created success");
 
       window.location.replace("/post/" + res.data._id); //go to the new post
