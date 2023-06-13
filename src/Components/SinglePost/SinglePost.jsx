@@ -17,7 +17,7 @@ export default function SinglePost() {
   const { user } = useContext(Context);
   useEffect(() => {
     const getPost = async () => {
-      const res = await axios.get("/posts/" + path);
+      const res = await axios.get(baseURL + "/posts/" + path);
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
