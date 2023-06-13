@@ -3,6 +3,7 @@ import "./Setting.css";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import { Context } from "../../context/Context";
 import axios from "axios";
+
 export default function Setting() {
   const { user, dispatch } = useContext(Context);
   const [file, setFile] = useState(null);
@@ -10,7 +11,7 @@ export default function Setting() {
   const [email, setEmail] = useState(user.email);
   const [password, setPassword] = useState(user.password);
   const [success, setSuccess] = useState(false);
-  const PF = baseURL + "/images/";
+  const PF = "https://react-blog-api-ten.vercel.app/api/images/";
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: "UPDATE_START" });
