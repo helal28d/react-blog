@@ -9,7 +9,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import axios from "axios";
-axios.defaults.baseURL = "https://react-blog-api-ten.vercel.app/api";
+axios.defaults.baseURL = "https://react-blog-api-ten.vercel.app";
 function App() {
   const { user } = useContext(Context);
   return (
