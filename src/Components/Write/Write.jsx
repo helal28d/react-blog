@@ -38,7 +38,7 @@ export default function Write() {
       const res = await axios.post(baseURL + "/posts", newPost);
       console.log("post created success");
 
-      window.location.replace("/post/" + res.data._id); //go to the new post
+      window.location.replace(baseURL + "/post/" + res.data._id); //go to the new post
     } catch (error) {
       console.log(error);
     }

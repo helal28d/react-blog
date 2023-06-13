@@ -27,7 +27,7 @@ export default function SinglePost() {
   const handleDelete = async () => {
     //delete need data{}
     try {
-      await axios.delete(`/posts/${post._id}`, {
+      await axios.delete(`${baseURL}/posts/${post._id}`, {
         data: { username: user.username },
       });
       window.location.replace("/");
@@ -37,7 +37,7 @@ export default function SinglePost() {
   };
   const handelUpdate = async () => {
     try {
-      await axios.put(`/posts/${post._id}`, {
+      await axios.put(`${baseURL}/posts/${post._id}`, {
         username: user.username,
         title,
         desc,
