@@ -3,6 +3,7 @@ import "./Setting.css";
 import Sidebar from "../../Components/Sidebar/Sidebar";
 import { Context } from "../../context/Context";
 import axios from "axios";
+import { baseURL } from "../../server";
 
 export default function Setting() {
   const { user, dispatch } = useContext(Context);
@@ -28,7 +29,7 @@ export default function Setting() {
 
       try {
         await axios
-          .post("/upload", formData)
+          .post(baseURL + "/upload", formData)
           .then((response) => {
             updatedUser.profilePic = response.data;
           })
