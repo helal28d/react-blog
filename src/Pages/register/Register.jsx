@@ -11,12 +11,12 @@ export default function Register() {
     setEror(false);
     e.preventDefault();
     try {
-      const res = await axios.post("/auth/reg", {
+      const res = await axios.post(baseURL + "/auth/reg", {
         username,
         email,
         password,
       });
-      res.data && window.location.replace("/login");
+      res.data && window.location.replace(baseURL + "/login");
     } catch (error) {
       console.log(error);
       setEror(true);

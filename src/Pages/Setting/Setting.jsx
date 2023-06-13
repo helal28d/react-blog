@@ -10,7 +10,7 @@ export default function Setting() {
   const [email, setEmail] = useState(user.email);
   const [password, setPassword] = useState(user.password);
   const [success, setSuccess] = useState(false);
-  const PF = "http://localhost:5000/images/";
+  const PF = baseURL + "/images/";
   const handleSubmit = async (e) => {
     e.preventDefault();
     dispatch({ type: "UPDATE_START" });
