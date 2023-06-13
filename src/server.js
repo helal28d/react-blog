@@ -15,4 +15,5 @@
 // export default axios.create({
 //   baseURL: getBaseUrl(),
 // });
-export const baseURL = "https://react-blog-api-ten.vercel.app/api";
+// export const baseURL = "https://react-blog-api-ten.vercel.app/api";
+export const baseURL = "https://sore-pink-armadillo-veil.cyclic.app/api";
