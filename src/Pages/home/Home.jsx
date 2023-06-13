@@ -11,7 +11,9 @@ export default function Home() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("/posts" + search);
+      const res = await axios.get(
+        "https://react-blog-api-ten.vercel.app/posts" + search
+      );
       setPosts(res.data);
       console.log(res.data);
     };
