@@ -1,7 +1,7 @@
 import React from "react";
 import "./post.css";
 import { Link } from "react-router-dom";
-import { baseImgURL, baseURL } from "../../server";
+import { baseImgURL } from "../../server";
 export default function Post({ post }) {
   const PF = baseImgURL + "/images/";
   return (
