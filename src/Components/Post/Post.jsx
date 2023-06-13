@@ -1,9 +1,9 @@
 import React from "react";
 import "./post.css";
 import { Link } from "react-router-dom";
-import { baseURL } from "../../server";
+import { baseImgURL, baseURL } from "../../server";
 export default function Post({ post }) {
-  const PF = baseURL + "/images/";
+  const PF = baseImgURL + "/images/";
   return (
     <div className="post">
       {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}

@@ -4,9 +4,9 @@ import { useLocation } from "react-router-dom";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import { baseURL } from "../../server";
+import { baseImgURL, baseURL } from "../../server";
 export default function SinglePost() {
-  const PF = baseURL + "/images/";
+  const PF = baseImgURL + "/images/";
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
