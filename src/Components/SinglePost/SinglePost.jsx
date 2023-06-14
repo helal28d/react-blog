@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
 import { baseImgURL, baseURL } from "../../server";
 export default function SinglePost() {
-  const PF = baseImgUrl + "/images/";
+  const PF = baseImgURL + "/images/";
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
