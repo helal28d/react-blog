@@ -2,10 +2,10 @@ import React, { useContext } from "react";
 import "./TopBar.css";
 import { Link } from "react-router-dom";
 import { Context } from "../../context/Context";
-import { baseURL } from "../../server";
+import { baseImgURL, baseURL } from "../../server";
 export default function TopBar() {
   const { user, dispatch } = useContext(Context);
-  const PF = baseURL + "/images/";
+  const PF = baseImgURL;
   const handleLogout = () => {
     dispatch({ type: "LOGOUT" });
     window.location.replace("/");
