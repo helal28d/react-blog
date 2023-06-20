@@ -17,5 +17,4 @@
 // });
 //  export const baseURL = "react-blog-api-ten.vercel.app/api";
 export const baseURL = "https://sore-pink-armadillo-veil.cyclic.app/api";
-export const baseImgURL =
-  "https://sore-pink-armadillo-veil.cyclic.app/api/images/";
+export const baseImgURL = "https://sore-pink-armadillo-veil.cyclic.app/images/";
